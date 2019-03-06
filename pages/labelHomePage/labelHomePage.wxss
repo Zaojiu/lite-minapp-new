@@ -1,0 +1,85 @@
+
+
+.header{
+  
+ 
+}
+
+.txt{
+  position: relative;
+}
+.txt .name{
+font-size: 20px;
+line-height: 24px;
+color: rgb(85, 85, 85);
+overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          font-weight: 700;
+          margin:9px 0 4px 0;
+          padding-right: 70px;
+
+}
+.txt .followNum{
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(85, 85, 85);
+  display: inline-block;
+  font-weight: 600;
+  float: left;
+  margin-right: 4px;
+}
+.txt .followTxt{
+  font-size: 12px;
+  color: rgb(179, 179, 179);
+  display: inline-block;
+  float: left;
+  font-weight: 700;
+  
+}
+
+.showDom{
+    position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 18px;
+            background: linear-gradient(to top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0) 100%);
+            background-repeat: repeat-x;
+}
+.follow{
+  position: absolute;
+  top: 20px;
+  right: 4px;
+
+}
+/* //切换 */
+.tuijian{
+  margin: 16px 0px 16px 0px;
+  
+}
+.tuijian .tui-item{
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+  color: rgb(179, 179, 179);
+  font-weight: 700;
+  padding: 0 12px;
+  display: inline-block;
+  border-radius: 14px;
+}
+.tuijian .tui-item.active{color: rgb(85, 85, 85);background-color: rgb(239, 239, 239)}
+
+.tuijianlabel{
+ height: 40px;width: 100%; box-sizing: border-box;overflow: hidden;line-height: 80rpx; text-align: center; font-size: 12px; white-space: nowrap; z-index: 99;
+}
+.tuijianlabel .tui-item{
+  line-height: 16px;
+  font-size: 12px;
+  color: rgb(179, 179, 179);
+  font-weight: 700;
+  margin-right: 16px;
+  display: inline-block;
+}

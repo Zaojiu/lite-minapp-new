@@ -1,0 +1,84 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view> -->
+
+
+<view >
+
+<!-- <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">获取用户信息</button>
+<text bindtap='login'>denglu</text> -->
+<view class="search-con {{isRight?'fixed':''}}" >
+<view class='search'>
+  <image wx:if="{{!isRight}}" class='image' src='../../assets/image/search@3x.png'></image>
+  <input value="{{seaTxt}}" confirm-type='search'maxlength='140' class="input {{isRight?'marginRight':''}}" placeholder='搜索' bindtap="btnClick" placeholder-style='color:rbg(239,239,239);' bindconfirm="searchBtn"></input>
+   <text wx:if="{{isRight}}" bindtap='cancel'>取消</text>
+ 
+</view>
+
+<view class='tab-center' wx:if="{{isRight}}">
+  <view class='lately'>
+  <image bindtap='close' wx:if="{{isClose}}" src='/assets/image/close.png' mode='aspectFit'></image>
+  <text>最近搜索</text>
+    <view wx:for="{{searchData}}">
+      <view bindtap='bClick' data-text="{{item}}">{{item}} </view>
+    </view>
+   
+  </view>
+  <view class='hot'>
+    <text>热门搜索</text>
+   
+  </view>
+</view>
+</view>
+ <view  class="tab-h {{isScollTop?'tab-scroll':''}}" >
+       <view class="scroll-tab">
+       <view class='tab_tips' style='left:{{tops_left}}px'></view>   
+        <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">时刻</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">社区</view>
+        <view class="tab-item {{currentTab==2?'active':''}}"  data-current="2" bindtap="swichNav">关注</view>
+       
+      </view>
+</view>
+
+<swiper bindchange="switchTab" class="{{isScollTop?'swiper-top':''}}" 
+  autoplay="{{autoplay}}" style="height:{{height}}px" interval="{{interval}}" current="{{currentTab}}" duration="{{duration}}">
+ 
+    <swiper-item>
+     <view class='followL' style='padding:0 20px;'>
+      <speaker list="{{timeLineList}}"></speaker>
+      <view class='loading'>
+          {{isLoading}} 
+      </view>
+    </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='followL1' style='padding:0 20px;'>
+        <find list="{{discoverList}}"></find>
+        <view class='loading'>
+          {{isLoading}} 
+      </view>
+    </view>
+    </swiper-item>
+   
+   <swiper-item>
+    <view class='followL2' style='padding:0 20px;' wx:if="{{isFoFav==false}}">
+      <follow listLY="{{followLY}}" listUser="{{followUser}}"></follow>
+    </view>
+    <view class='followL2' style='padding:0 20px;' wx:if="{{isFoFav==true}}">
+        <find list="{{faFavList}}"></find>
+        <view class='loading'>
+          {{isLoading}} 
+      </view>
+      </view>
+    </swiper-item>
+</swiper>
+
+
+</view>

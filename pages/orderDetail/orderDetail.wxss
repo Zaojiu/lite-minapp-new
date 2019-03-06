@@ -1,0 +1,117 @@
+/* pages/orderDetail/orderDetail.wxss */
+.container {padding: 20px 20px 60px 20px;}
+.item{width: 100%;}
+.item .item-head{display: flex;height: 80px;background: rgb(247, 247, 247);margin-bottom: 32px;}
+.item .img{width: 80px;
+          margin-right: 8px;}
+.img image{ width: 80px;
+            height: 80px;}
+            .info{ flex: 1;}
+
+            .info .title{
+              font-size: 14px;
+            line-height: 20px;
+            font-weight: 700;
+            color: rgb(85, 85, 85);
+            margin: 7px 0 8px 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            }
+            .info .type{
+               font-size: 14px;
+            line-height: 14px;
+            font-weight: 700;
+            color: rgb(179, 179, 179);
+            }
+            .moneyInfo{
+              width: 57px;
+          text-align: right;
+          margin-right: 8px;
+            }
+            .moneyInfo .newMoney{
+              font-size: 14px;
+            line-height: 14px;
+            font-weight: 700;
+            color: rgb(85, 85, 85);
+            margin: 10px 0 6px 0;
+            }
+             .oldMoney{
+            font-size: 14px;
+            line-height: 14px;
+            color: rgb(179, 179, 179);
+            text-decoration:line-through;
+            margin-bottom: 6px;
+          }
+          .num{
+            font-size: 14px;
+            line-height: 14px;
+            color: rgb(179, 179, 179);
+          }
+          .choose{
+              position: relative;
+              overflow: hidden;
+          }
+          .choose .span{
+             font-size: 16px;
+        line-height: 22px;
+        color: rgb(85,85,85);
+        font-weight: 700;
+        float: left;
+          }
+          .choose .i{
+            font-size: 16px;
+        color: rgb(173, 37, 38);
+        font-weight:600 ;
+        font-style: normal;
+        float: right;
+        padding-right: 20px;
+       
+          }
+          .choose .rightImg{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: 0px;
+            top:50%;
+            margin-top: -10px;
+          }
+          .footer{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background-color: #fff;
+
+
+      line-height: 50px;
+      text-align: center;
+      font-weight: 700;
+     
+      
+    }
+     .left{
+        float: left;
+        width: 50%;
+        font-size: 16px;
+        color: rgb(85,85,85);
+        border-top: 1px solid rgb(242,242,242);
+        
+      }
+      .left .totalMoney{
+          font-size: 16px;
+          color: rgb(173, 37, 38);
+          font-weight: 600;
+        }
+      .right{
+        background-color: rgb(173, 37, 38);
+        float: right;
+        width: 50%;
+        font-size: 16px;
+        color: #fff;
+      }
+
+

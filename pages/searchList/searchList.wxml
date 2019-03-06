@@ -1,0 +1,91 @@
+<!--pages/searchList/searchList.wxml-->
+<!-- 搜索结果 -->
+<view class='posTop'>
+
+
+<view class="search-con {{isRight?'fixed':''}}" >
+<view class='search'>
+  <image wx:if="{{!isRight}}" class='image' src='../../assets/image/search@3x.png'></image>
+  <input value='{{text}}' confirm-type='search'maxlength='140' class="input {{isRight?'marginRight':''}}" placeholder='搜索' bindtap="btnClick" placeholder-style='color:rbg(239,239,239);' bindconfirm="searchBtn"></input>
+   <text wx:if="{{isRight}}" bindtap='cancel'>取消</text>
+ 
+</view>
+
+<view class='tab-center' wx:if="{{isRight}}">
+  <view class='lately'>
+  <image bindtap='close' wx:if="{{isClose}}" src='/assets/image/close.png' mode='aspectFit'></image>
+  <text>最近搜索</text>
+    <view wx:for="{{searchData}}">
+      <view bindtap='bClick' data-text="{{item}}">{{item}} </view>
+    </view>
+   
+  </view>
+  <view class='hot'>
+    <text>热门搜索</text>
+   
+  </view>
+</view>
+</view>
+
+
+
+<scroll-view bindscrolltoupper="upper" bindscrolltolower="lower" enable-back-to-top="true" bindscroll="scroll" scroll-into-view="" scroll-top="" scroll-x class="scroll-view">
+  <view class="item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">短视频</view>
+   <view class="item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">视频</view>
+    <view class="item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">讲者</view>
+     <view class="item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">活动</view>
+      <view class="item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">课程</view>
+       <view class="item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">听书</view>
+        
+</scroll-view>
+</view>
+
+<view class='dataList' >
+
+<swiper bindchange="switchTab" 
+  autoplay="{{autoplay}}" style="height:{{height}}px;" interval="{{interval}}" current="{{currentTab}}" duration="{{duration}}">
+ 
+    
+    <swiper-item>
+      <view class='followL0' style='padding:0 20px;margin-top:-14px;'>
+        <find list="{{discoverList}}"></find>
+        <!-- <view class='loading'>
+          {{isLoading}} 
+      </view> -->
+    </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='followL1' style='padding:0 20px; margin-top:-14px;'>
+      <videoList list="{{videoList}}"></videoList>
+      </view>
+    </swiper-item>
+
+    
+
+    <swiper-item>
+      <view class='followL2' style='padding:0 20px;margin-top:14px;'>
+      <speakerUser list="{{speakerList}}"></speakerUser>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='followL3' style='padding:0 20px;'>
+      <event list="{{eventList}}"></event>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='followL4' style='padding:0 20px;margin-top:14px;'>
+      <courseList list="{{courseList}}"></courseList>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='followL5' style='padding:0 20px;margin-top:14px;'>
+      <bookList list="{{bookList}}"></bookList>
+      </view>
+    </swiper-item>
+     
+</swiper>
+<view class='loading' style='padding-bottom:15px;'>
+          {{isLoading}} 
+      </view>
+
+</view>

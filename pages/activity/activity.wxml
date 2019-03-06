@@ -1,0 +1,24 @@
+<!--活动-->
+<view style='padding:0 20px;'>
+<view class='actiList'>
+<view class='item' wx:for="{{event}}" wx:key='{{item.id}}' wx:for-index="bindex" bindtap="getDetail" data-id="{{item.id}}" >
+
+  <view class='img' data-bindex='{{bindex}}' >
+
+        <image src="{{item.image}}" mode="aspectFill"></image>
+        <view wx:if="{{item.status==0}}" class='state'> 报名中 </view>
+
+<view wx:else class='state over'>已结束</view>
+        <!-- <view class='state'>{{state[bindex]}}</view> -->
+      </view >
+      <view class='text'>
+          <text class='subject'>{{item.title}}</text>
+          <text class='desc'>{{item.eventDate}} · {{item.address}}</text>
+      </view>
+  </view>
+     <view class='loading'>
+          {{isLoading}} 
+      </view>
+</view>
+</view>
+

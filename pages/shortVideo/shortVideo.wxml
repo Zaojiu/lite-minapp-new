@@ -1,0 +1,26 @@
+<!--pages/shortVideo/shortVideo.wxml-->
+<!-- <view class='content'>
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" vertical="{{vertical}}" duration="{{duration}}" bindchange="switchTab">
+  <block >
+    <swiper-item>
+      <video controls="{{constrols}}" autoplay='{{true}}' show-center-play-btn="{{false}}" enable-progress-gesture="{{false}}"src='http://staticfile.zaojiu.tv/lhXbdztsfziL1FgofXDMnI6LuaGO_480P_600K' show-play-btn="false"  loop="true">
+      <cover-view class='summary'>
+        123
+      </cover-view>
+    </video>
+    </swiper-item>
+    <swiper-item>
+      <video src='http://staticfile.zaojiu.tv/lhXbdztsfziL1FgofXDMnI6LuaGO_480P_600K' controls='false' loop="true">
+      <cover-view>
+        123
+      </cover-view>
+    </video>
+    </swiper-item>
+  </block>
+</swiper>
+
+ 
+</view> -->
+<!-- 短视频 -->
+<web-view src="{{webSrc}}" bindmessage="videoShare"></web-view>

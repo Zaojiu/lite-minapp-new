@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/course/course",
+    "pages/courseDetail/courseDetail",
+    "pages/hearDetail/hearDetail",
+    "pages/activity/activity",
+    "pages/activityDetail/activityDetail",
+    "pages/minte/minte",
+    "pages/userHomePage/userHomePage",
+    "pages/labelHomePage/labelHomePage",
+    "pages/longVideo/longVideo",
+    "pages/shortVideo/shortVideo",
+    "pages/myLike/myLike",
+    "pages/mySee/mySee",
+    "pages/myFollow/myFollow",
+    "pages/myOrder/myOrder",
+    "pages/myCard/myCard",
+    "pages/ticketPurchase/ticketPurchase",
+    "pages/orderDetail/orderDetail",
+    "pages/proDiscount/proDiscount",
+    "pages/searchList/searchList",
+    "pages/weekDetail/weekDetial",
+    "pages/videoDetail/videoDetail",
+    "pages/userPage/userPage",
+    "pages/labelPage/labelPage",
+    "pages/vip/vip",
+    "pages/purchased/purchased",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "造就Lite",
+    "navigationBarTextStyle": "white",
+    "onReachBottomDistance": 50
+    
+  },
+  "tabBar": {
+    "color": "#b3b3b3",
+    "selectedColor": "#555",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "assets/image/shouye_default@3x.png",
+        "selectedIconPath": "assets/image/shouye_selected@3x.png"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "成长",
+        "iconPath": "assets/image/chengzhang_default@3x.png",
+        "selectedIconPath": "assets/image/chengzhang_selected@3x.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动",
+        "iconPath": "assets/image/huodong_default@3x.png",
+        "selectedIconPath": "assets/image/huodong_selected@3x.png"
+      },
+      {
+        "pagePath": "pages/minte/minte",
+        "text": "我的",
+        "iconPath": "assets/image/wode_default@3x.png",
+        "selectedIconPath": "assets/image/wode_selected@3x.png"
+      }
+    ]
+  }
+}

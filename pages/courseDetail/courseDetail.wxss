@@ -1,0 +1,176 @@
+/* pages/courseDetail/courseDetail.wxss */
+@import "../../style/util/style.wxss";
+.content{
+
+}
+.header-img{
+  width: 100%;
+  height: 211px;
+  position: relative;
+}
+.header-img image{
+  width: 100%;
+  height: 100%;
+}
+.header-img .type{
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-weight: 100;
+}
+.header-img .box_shadow{
+  height: 88px;
+  width: 100%;
+  background-image: -webkit-linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,0.4));
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cou_tab{
+  width: 100%;
+  height: 40px;
+  
+  text-align: center;
+  border-bottom: 1px solid rgb(245, 245, 245);
+  font-size: 0;
+  position: relative;
+}
+.cou_tab .tab{
+  width: 50%;
+  float: left;
+  font-size: 14px;
+  color: rgb(179, 179, 179);
+  font-weight: 700;
+  height: 40px;
+  line-height: 40px;
+}
+.tab.active{color: rgb(85, 85, 85);position: relative;}
+.activeTab{
+  width: 50%;
+  background-color: #CC2B2B;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+
+/* // */
+.summary{
+  padding: 26px 20px 60px 20px;
+}
+.tit{
+font-size: 20px;
+line-height: 28px;
+font-weight: 700;
+color: rgb(85, 85, 85);
+}
+.user_info{
+  display: flex;
+  margin: 20px 0 24px 0;
+}
+.user_info .img{
+  width: 40px;
+  margin-right: 8px;
+}
+.user_info .img image{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user_info .user_sum{
+  flex: 1;
+}
+.user_sum .name{
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(85, 85, 85);
+  font-weight: 700;
+  margin: 2px 0;
+}
+.user_sum .info{
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(179, 179, 179);
+  
+  margin-top: 5px;
+   overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+}
+.follow{
+  padding: 8px 0 8px 20px;
+}
+.follow .btn-follow{
+ 
+}
+
+/* 课程列表 */
+.courseList{
+  padding: 24px 20px 60px 20px;
+}
+.couItem{
+  display: flex;
+  margin-bottom: 34px;
+}
+.couItem .info{
+  flex: 1;
+}
+.couItem .desc{
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(85, 85, 85);
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.couItem .time{
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(179, 179, 179);
+}
+.couItem .playImg{
+  width: 40px;
+  margin-right: 10px;
+}
+.playImg image{
+  width: 40px;
+  height: 40px;
+}
+.footer{
+   position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background-color: #CC2B2B;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 50px;
+      text-align: center;
+      color: #fff;
+}
+.wxParse-inline{
+  font-size: 14px;
+    line-height: 28px;
+    color: #a6a6a6;
+}
+.wxParse-inline image{
+  max-width: 100%;
+  margin: 0 auto;
+}
+.wxParse-img{
+    max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}

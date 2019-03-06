@@ -1,0 +1,23 @@
+<!--components/follow/follow.wxml-->
+
+<view class='items'>
+  <view class='item' wx:for="{{list}}" bindtap='detail' data-type="{{item.type}}" data-id="{{item.id}}" wx:key="unique" >
+    <view class='img'>
+      <image class="image {{item.type==121?'imgT':''}}" src='{{item.coverUrl}}' mode='widthFix'></image>
+      <view class='text' wx:if="{{item.type==119}}">
+        <text class='tit'>{{item.subject}}</text>
+        <text class='desc' >{{item.mediaTotal}}个相关演讲</text>
+        <text class='content'>{{item.desc}}</text>
+      </view>
+    <view class='text2 ' wx:if="{{item.type==121}}">
+        <text class='tit'>{{item.subject}}</text>
+        <text class='content'>{{item.desc}}</text>
+      </view>
+    </view>
+    <view class='dateTime' wx:if="{{item.isShowDate}}">
+      <text class='month'>{{item.month}}月</text>
+      <text class='week'>/第{{item.week}}周</text>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,60 @@
+<!--pages/courseDetail/courseDetail.wxml-->
+
+<!-- <view class="header-img">
+  <image src='{{dataList.course.coverUrl}}' mode='aspectFill'></image>
+  
+  <view class='box_shadow'></view>
+</view>
+
+<view class='cou_tab'>
+  <view class="tab {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">
+    课程简介 
+  </view>
+   <view class="tab {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">
+    课程列表
+  </view>
+  <view class="activeTab " style="right:{{tabRight}}"></view>
+</view>
+<view class='summary' wx:if='{{currentTab==0}}'>
+  <view class='tit'>{{dataList.course.subject}}</view>
+  <view class='user_info'>
+    <view class='img'>
+      <image src='{{dataList.course.speaker.coverUrl}}'></image>
+    </view>
+
+    <view class='user_sum'>
+      
+      <view class='info'>{{dataList.course.speaker.title}}</view>
+    </view>
+    <view class='follow'>
+      <view class='button btn-follow'>关注</view>
+    </view>
+  </view>
+
+  <view>
+    <import src="../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>
+
+<view class='courseList' wx:if='{{currentTab==1}}'>
+  <view class='couItem' wx:for="{{courseList}}">
+   <view class='playImg'>
+      <image src='../../assets/image/bigPlayN.png'></image>
+    </view>
+    <view class='info'>
+      <view class='desc'>
+      {{item.subject}}
+      </view>
+      <view class='time'>{{item.duration}}</view>
+    </view>
+   
+  </view>
+  
+</view>
+<view class='footer'>
+  199元购买课程
+</view> -->
+
+<!-- 课程详情 -->
+<web-view src="{{webSrc}}" bindmessage="shareData"></web-view>

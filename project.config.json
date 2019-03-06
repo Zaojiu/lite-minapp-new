@@ -1,0 +1,209 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"appid": "wx23daa4d52722ecef",
+	"projectname": "zaojiu-lite",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 25,
+			"list": [
+				{
+					"id": -1,
+					"name": "course",
+					"pathName": "pages/course/course",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "成长",
+					"pathName": "pages/course/course",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "活动",
+					"pathName": "pages/activity/activity",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "听书详情",
+					"pathName": "pages/hearDetail/hearDetail",
+					"query": "?id=5bebf01f1e4b400001ef8748"
+				},
+				{
+					"id": 5,
+					"name": "用户主页",
+					"pathName": "pages/userHomePage/userHomePage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "标签主页",
+					"pathName": "pages/labelHomePage/labelHomePage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "长视频详情",
+					"pathName": "pages/longVideo/longVideo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的首页",
+					"pathName": "pages/minte/minte",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的订单",
+					"pathName": "pages/myOrder/myOrder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的卡包",
+					"pathName": "pages/myCard/myCard",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "购票",
+					"pathName": "pages/ticketPurchase/ticketPurchase",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/orderDetail/orderDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "支付订单",
+					"pathName": "pages/proDiscount/proDiscount",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "课程详情",
+					"pathName": "pages/courseDetail/courseDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "短视频",
+					"pathName": "pages/shortVideo/shortVideo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "活动",
+					"pathName": "pages/activity/activity",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "活动购票",
+					"pathName": "pages/ticketPurchase/ticketPurchase",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "搜索结果页",
+					"pathName": "pages/searchList/searchList",
+					"query": "text=一",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索结果页",
+					"pathName": "pages/weeklyDetail",
+					"query": "text=一",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "时刻详情",
+					"pathName": "pages/weekDetail/weekDetial",
+					"query": "id=11743",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "活动购票",
+					"pathName": "pages/ticketPurchase/ticketPurchase",
+					"query": "id= 105847",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "活动购票",
+					"pathName": "pages/vip/vip",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "已购",
+					"pathName": "pages/purchased/purchased",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "会员中心",
+					"pathName": "pages/vip/vip",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/login/login",
+					"scene": null
+				}
+			]
+		}
+	}
+}

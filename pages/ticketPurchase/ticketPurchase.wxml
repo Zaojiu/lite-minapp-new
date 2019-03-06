@@ -1,0 +1,40 @@
+<!--pages/ticketPurchase/ticketPurchase.wxml-->
+<!-- <view class="container">
+    
+    <view  class="content-header">
+      <view  class="img">
+        <image src="{{detail.image}}" mode='aspectFill'></image>
+      </view>
+      <view  class="info">
+        <view  class="money"><view class="typeI">￥</view>{{(totalPrice)/100}}</view>
+        <view  class="title">{{detail.title}}</view>
+        <view  class="type">{{activeName}}</view>
+      </view >
+    </view >
+
+    <view  class="itemList">
+      <view  class="item {{bindex==0?'itemActive':''}}" wx:for="{{detail.ticketLists}}"   bindtap="tabActive" wx:for-index="bindex" data-index="{{bindex}}">
+        {{item.ticketName}}
+      </view >
+ 
+
+    </view >
+    <view  class="ticketNum">
+      <view  class="num">购买数量</view>
+      <view  class="compute">
+        <image  class="reduce" src="../../assets/image/reduceNum.png" bindtap="reduceTicket"></image>
+        <view  class="number" >1</view>
+        <image  class="add" src="../../assets/image/addNum.png" bindtap="addTicket"></image>
+      </view >
+
+    </view >
+
+    <view  class="footer" bindtap="goProPrice">
+      购买门票
+    </view >
+  </view > -->
+<!-- 购票 -->
+  <web-view src="{{webSrc}}" bindmessage="msgHandler"></web-view>
+
+
+

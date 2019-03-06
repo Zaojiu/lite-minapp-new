@@ -1,0 +1,88 @@
+/* pages/longVideo/longVideo.wxss */
+
+#video{
+width: 100%;
+}
+.top-head {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.top-head cover-image{
+  display: inline-block;
+  margin-left: 20px;
+}
+.top-head .like{
+  width: 24px;
+  height: 24px;
+}
+.top-head .headset{
+  width: 24px;
+   height: 24px;
+}
+.bottom{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 44px;
+ 
+  display: flex;
+}
+.bottom .playNY{
+  width: 24px;
+  height: 24px;
+}
+
+.content{
+  padding: 0 20px;
+}
+.tit{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: rgb(85, 85, 85);
+  margin: 16px 0 20px 0;
+}
+.info{
+display: flex;
+margin-bottom: 24px;
+}
+.info .img{
+  width: 40px;
+  margin-right: 8px;
+}
+.img image{
+  width: 40px;
+  height: 40px;
+  border-radius:50%; 
+}
+.info .info-txt{
+  flex: 1;
+}
+.info-txt .name {
+font-size: 14px;
+line-height: 18px;
+color: rgb(85, 85, 85);
+  font-weight: 700;
+  margin: 2px 0;
+}
+.info-txt .summary{
+font-size: 12px;
+line-height: 16px;
+color: rgb(179, 179, 179);
+overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+
+}
+ .followBtn{
+  margin: 8px 0 0 20px;
+}
+.v-html{
+  font-size: 14px;
+  line-height: 28px;
+  color: rgb(166, 166, 166);
+}

@@ -1,0 +1,18 @@
+<!-- 讲者 -->
+<view class='follow-list'>
+  <view class='follow-item'  wx:for="{{list}}" wx:key="unique" >
+    <view class='item-img' bindtap="getDetail" data-id="{{item.id}}">
+    <image  class="img" src='{{item.image}}'></image>
+    </view>
+    
+        <view class='item-info'>
+        <text class='tit'>{{item.speakerName}}</text>
+        <text class='info'>{{item.company}}</text>
+        </view>
+      <view class='item-btn'>
+      <view class="button follow-btn {{item.isAttention==1?'noActive':''}}">关注</view>
+      </view>
+  
+  </view>
+ 
+</view>

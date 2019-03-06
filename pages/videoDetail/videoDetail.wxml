@@ -1,0 +1,2 @@
+<!-- 视频详情 -->
+<web-view src="{{webSrc}}" bindmessage="shareData"></web-view>

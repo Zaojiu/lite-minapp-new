@@ -1,0 +1,64 @@
+<!-- <view style='padding:0 20px;'>
+<scroll-view scrool-x="true" class='tuijian'>
+<view class="tui-item {{tuiTab==0?'active':''}}" bindtap='switchTui'  data-current="0">
+  活动票
+</view>
+<view class="tui-item {{tuiTab==1?'active':''}}" bindtap='switchTui'  data-current="1">
+  优惠券
+</view>
+</scroll-view>
+
+<view class='cardList'>
+  <view class='hdCardList' wx:if="{{tuiTab==0}}">
+    <view class='hdItem'>
+      <view class='left'>
+        <view class='tit'>造就未来大会A区VIP票</view>
+        <view class='time'>2018.9.17 09:30 </view>
+        <view class='address'>上海市西藏南路39号体育中心</view>
+      </view>
+       <view class='right'>
+        <image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILqIuSgPKaAlH1Srj0oLVvCBu5qPEHLz3TpdhDg9uicpFic1P0HeNKbtGPwyF2icq7uJUIQuDUpbniaQ/132'></image>
+        <view class='friend'>送朋友</view>
+       </view>
+    </view>
+
+    <view class='hdItem'>
+      <view class='left'>
+        <view class='tit'>造就未来大会A区VIP票</view>
+        <view class='time'>2018.9.17 09:30 </view>
+        <view class='address'>上海市西藏南路39号体育中心</view>
+      </view>
+       <view class='right'>
+        <image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILqIuSgPKaAlH1Srj0oLVvCBu5qPEHLz3TpdhDg9uicpFic1P0HeNKbtGPwyF2icq7uJUIQuDUpbniaQ/132'></image>
+        <view class='friend yesFriend'>已送</view>
+       </view>
+    </view>
+  </view>
+
+
+  <view class='hdCardList' wx:if="{{tuiTab==1}}">
+    <view class='hdItem'>
+      <view class='left'>
+        <view class='tit'>造就未来大会A区VIP票</view>
+        <view class='time'>2018.9.17 09:30 </view>
+        <view class='address'>上海市西藏南路39号体育中心</view>
+      </view>
+       
+    </view>
+
+    <view class='hdItem'>
+      <view class='left'>
+        <view class='tit'>造就未来大会A区VIP票</view>
+        <view class='time'>2018.9.17 09:30 </view>
+        <view class='address'>上海市西藏南路39号体育中心</view>
+      </view>
+      
+    </view>
+</view>
+</view>
+
+</view>
+
+ -->
+ <!-- 我的卡包 -->
+<web-view src="{{webSrc}}" bindmessage="msgHandler"></web-view>

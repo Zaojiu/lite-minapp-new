@@ -1,0 +1,46 @@
+<!--components/follow/follow.wxml-->
+
+<scroll-view scrool-x="true" class='tuijian'>
+<view class="tui-item {{tuiTab==0?'active':''}}" bindtap='switchTui'  data-current="0">
+   推荐领域
+</view>
+<view class="tui-item {{tuiTab==1?'active':''}}" bindtap='switchTui'  data-current="1">
+ 
+  推荐讲者
+</view>
+</scroll-view>
+<!-- 领域 -->
+<view class='followList2' wx:if="{{tuiTab==0}}">
+    <view class='f-item' wx:for="{{listLY}}" wx:key="unique" wx:for-index="itemIndex">
+     <view class='img-info' data-id='{{item.id}}' bindtap='goLabel'>
+        <image src='{{item.image}}'></image>
+        <view class='txt-info'>
+         <text class='tits'>#{{item.tagName}}</text>
+         <text class='likes'>{{item.notesNum}} 粉丝</text>
+        </view>
+       
+      </view>
+      <view class="button big-follow {{item.isAttention==1?'noActive':''}}"  data-index="{{itemIndex}}"  bindtap='goFollow' data-id="{{item.id}}" data-isAttention="{{item.isAttention}}" data-type="1">关注</view>
+    </view>
+     
+    
+</view> 
+<!-- 讲者 -->
+<view class='follow-list' wx:if="{{tuiTab==1}}">
+  <view class='follow-item'  wx:for="{{listUser}}" wx:key="unique" wx:for-index="itemIndex">
+    <view class='item-img'  data-id='{{item.id}}' bindtap='goUser'>
+    <image  class="img" src='{{item.image}}'></image>
+    </view>
+    
+        <view class='item-info'>
+        <text class='tit'>{{item.speakerName}}</text>
+        <text class='info'>{{item.title}}</text>
+        </view>
+      <view class='item-btn'>
+      <view class="button follow-btn {{item.isAttention==1?'noActive':''}}" data-index="{{itemIndex}}"  bindtap='goFollow' data-id="{{item.id}}" data-isAttention="{{item.isAttention}}" data-type="0">关注</view>
+      </view>
+  
+  </view>
+ 
+</view>
+

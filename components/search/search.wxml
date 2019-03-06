@@ -1,0 +1,25 @@
+<view class="search-con {{isRight?'fixed':''}}" >
+<view class='search'>
+  <image wx:if="{{!isRight}}" class='image' src='../../assets/image/search@3x.png'></image>
+  <input value='' confirm-type='search'maxlength='140' class="input {{isRight?'marginRight':''}}" placeholder='搜索' bindtap="btnClick" placeholder-style='color:rbg(239,239,239);' bindconfirm="searchBtn()"></input>
+   <text wx:if="{{isRight}}" bindtap='cancel'>取消</text>
+ 
+</view>
+
+<view class='tab-center' wx:if="{{isRight}}">
+  <view class='lately'>
+  <image src='/assets/image/close.png' mode='aspectFit'></image>
+  <text>最近搜索</text>
+    <view>是士大夫</view>
+    <view>是士大夫</view>
+    <view>是士大夫</view>
+  </view>
+  <view class='hot'>
+    <text>热门搜索</text>
+    <view>是士大夫</view>
+    <view>是士大夫</view>
+    <view>是士大夫</view>
+  </view>
+</view>
+</view>
+

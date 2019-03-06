@@ -1,0 +1,42 @@
+
+
+/* 关注按钮 */
+view{
+  box-sizing: border-box;
+}
+.button{
+  width: 56px;
+  height: 24px;
+  line-height: 24px;
+  border:1px solid #CC2B2B;
+  color: #CC2B2B;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+  text-align: center;
+}
+.noActive{
+  border:1px solid rgb(239,239,239);
+  background-color: rgb(239,239,239);
+  color: rgb(179,179,179);
+}
+.loading{
+  text-align: center;
+  font-size: 14px;
+  color: rgb(179, 179, 179);
+  margin-bottom: 20px;
+}
+.wxParse-inline{
+  font-size: 14px;
+    line-height: 28px;
+    color: #a6a6a6;
+}
+.wxParse-inline image{
+  max-width: 100%;
+  margin: 0 auto;
+}
+.wxParse-img{
+    max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}

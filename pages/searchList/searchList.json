@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "find": "/components/find/find",
+    "videoList": "/components/videoList/videoList",
+    "speakerUser":"/components/speakerUser/speakerUser",
+    "event":"/components/event/event",
+    "courseList":"/components/course/course",
+    "bookList":"/components/book/book"
+  }
+}

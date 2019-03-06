@@ -1,0 +1,19 @@
+<!--pages/activityDetail/activityDetail.wxml-->
+
+
+<view class='img'>
+  <view class='boxshow'></view>
+  <image src='{{detail.image}}' mode="widthFix"></image>
+
+</view>
+<view class='subject'>
+  {{detail.title}}
+</view>
+<view class='content'>
+<import src="../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<view class='buy_tickets' bindtap='goOrder' data-type="{{detail.status}}" data-id="{{detail.id}}">{{ticketStatus}}</view>
+
+
+

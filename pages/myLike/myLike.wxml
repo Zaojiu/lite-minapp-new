@@ -1,0 +1,9 @@
+<!--pages/myLike/myLike.wxml-->
+<!-- <view style='padding:0 16px;'>
+<find></find>
+</view> -->
+<!-- 我喜欢的 -->
+<web-view src="{{webSrc}}" bindmessage="msgHandler"></web-view>
+
+
+

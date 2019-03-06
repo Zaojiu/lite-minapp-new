@@ -1,0 +1,5 @@
+<!--pages/mySee/mySee.wxml-->
+<!-- 我看过的 -->
+<view style='padding:0 16px;'>
+<find></find>
+</view>

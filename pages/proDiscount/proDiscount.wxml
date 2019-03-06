@@ -1,0 +1,24 @@
+<!--pages/proDiscount/proDiscount.wxml-->
+<view class="container">
+
+    <view class="content">
+
+
+      <view class="item_list" >
+        <view class="topItem" bindtap="noActive">
+          不使用优惠券
+          <image class="icon"  src='../../assets/image/yesIcon.png'></image>
+        </view>
+        <view class="item itemY"  bindtap="activeCoupon(index,item.money)">
+          <view class="text">
+            <view class="txt_one txt_h3">新用户专享优惠券</view>
+            <view class="txt_one txt_time">有效期：2018.8.1-2019.8.1</view>
+            <view class="txt_one txt_address">限造就现场使用</view>
+          </view>
+          <image class="icon" src='../../assets/image/noIcon.png'></image>
+        </view>
+
+      </view>
+
+    </view>
+  </view>

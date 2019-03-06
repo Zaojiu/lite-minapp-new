@@ -1,0 +1,56 @@
+<!--components/find/find.wxml-->
+<view class='overList'>
+
+
+<view class='findList left'>
+  <view class='item ' wx:for="{{list}}" wx:key="unique" >
+  <view wx:if="{{index%2==0}}">
+  
+ 
+    <view class='img' bindtap='detail' data-id="{{item.resourceId}}">
+      <image src='{{item.image}}' mode='widthFix'></image>
+    </view>
+    <view class='text'>
+        <text>{{item.title}}</text>
+    </view>
+    <view class='item-bottom'>
+    <view class='name'>
+      <image src='{{item.speakerImage}}' ></image>
+      <text>{{item.speakerName}}</text>
+    </view>
+     <view class='like' bindtap='goLike' data-id="{{item.resourceId}}" data-type="{{item.type}}" data-favourite="{{item.isFavourite}}" data-index="{{index}}">
+      <image src='../../assets/image/groupN.png' wx:if="{{item.isFavourite==0}}"></image>
+      <image src='../../assets/image/groupY.png' wx:if="{{item.isFavourite==1}}"></image>
+      <text>{{item.favourite}}</text>
+    </view>
+    </view>
+     </view>
+  </view>
+ 
+</view>
+
+<view class='findList right'>
+ <view class='item ' wx:for="{{list}}" wx:key="unique" >
+  <view wx:if="{{index%2==1}}">
+    <view class='img' bindtap='detail' data-id="{{item.resourceId}}">
+      <image src='{{item.image}}' mode='widthFix'></image>
+
+    </view>
+    <view class='text'>
+        <text>{{item.title}}</text>
+    </view>
+    <view class='item-bottom'>
+    <view class='name'>
+      <image src='{{item.speakerImage}}' ></image>
+      <text>{{item.speakerName}}</text>
+    </view>
+     <view class='like' bindtap='goLike' data-id="{{item.resourceId}}" data-type="{{item.type}}" data-favourite="{{item.isFavourite}}" data-index="{{index}}">
+      <image src='../../assets/image/groupN.png' wx:if="{{item.isFavourite==0}}"></image>
+      <image src='../../assets/image/groupY.png' wx:if="{{item.isFavourite==1}}"></image>
+      <text>{{item.favourite}}</text>
+    </view>
+    </view>
+    </view>
+  </view>
+</view>
+</view>

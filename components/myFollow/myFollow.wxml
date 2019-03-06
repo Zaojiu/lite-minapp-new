@@ -1,0 +1,130 @@
+<!--components/follow/follow.wxml-->
+
+<scroll-view scrool-x="true" class='tuijian'>
+<view class="tui-item {{tuiTab==0?'active':''}}" bindtap='switchTui'  data-current="0">
+  用户
+</view>
+<view class="tui-item {{tuiTab==1?'active':''}}" bindtap='switchTui'  data-current="1">
+  标签
+</view>
+</scroll-view>
+<!-- 讲者 -->
+<view class='follow-list' wx:if="{{tuiTab==0}}">
+  <view class='follow-item' bindtap="getHeight">
+    <view class='item-img'>
+    <image  class="img" src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILqIuSgPKaAlH1Srj0oLVvCBu5qPEHLz3TpdhDg9uicpFic1P0HeNKbtGPwyF2icq7uJUIQuDUpbniaQ/132'></image>
+    </view>
+    
+        <view class='item-info'>
+        <text class='tit'>章文嵩</text>
+        <text class='info'>Siri联合创始人及董事会成员，前斯坦福研究院风险投资集团总裁，《产品改变世界》作者    </text>
+        </view>
+      <view class='item-btn'>
+      <button class='follow-btn'>关注</button>
+      </view>
+  
+  </view>
+ <view class='follow-item'>
+    <view class='item-img'>
+    <image  class="img" src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILqIuSgPKaAlH1Srj0oLVvCBu5qPEHLz3TpdhDg9uicpFic1P0HeNKbtGPwyF2icq7uJUIQuDUpbniaQ/132'></image>
+    </view>
+    
+        <view class='item-info'>
+        <text class='tit'>章文嵩</text>
+        <text class='info'>Siri联合创始人及董事会成员，前斯坦福研究院风险投资集团总裁，《产品改变世界》作者    </text>
+        </view>
+      <view class='item-btn'>
+      <button class='follow-btn'>关注</button>
+      </view>
+  
+  </view>
+  <view class='follow-item'>
+    <view class='item-img'>
+    <image  class="img" src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILqIuSgPKaAlH1Srj0oLVvCBu5qPEHLz3TpdhDg9uicpFic1P0HeNKbtGPwyF2icq7uJUIQuDUpbniaQ/132'></image>
+    </view>
+    
+        <view class='item-info'>
+        <text class='tit'>章文嵩</text>
+        <text class='info'>Siri联合创始人及董事会成员，前斯坦福研究院风险投资集团总裁，《产品改变世界》作者    </text>
+        </view>
+      <view class='item-btn'>
+      <button class='follow-btn'>关注</button>
+      </view>
+  
+  </view>
+<view class='follow-item'>
+    <view class='item-img'>
+    <image  class="img" src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILqIuSgPKaAlH1Srj0oLVvCBu5qPEHLz3TpdhDg9uicpFic1P0HeNKbtGPwyF2icq7uJUIQuDUpbniaQ/132'></image>
+    </view>
+    
+        <view class='item-info'>
+        <text class='tit'>章文嵩</text>
+        <text class='info'>Siri联合创始人及董事会成员，前斯坦福研究院风险投资集团总裁，《产品改变世界》作者    </text>
+        </view>
+      <view class='item-btn'>
+      <button class='follow-btn'>关注</button>
+      </view>
+  
+  </view>
+  <view class='follow-item'>
+    <view class='item-img'>
+    <image  class="img" src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILqIuSgPKaAlH1Srj0oLVvCBu5qPEHLz3TpdhDg9uicpFic1P0HeNKbtGPwyF2icq7uJUIQuDUpbniaQ/132'></image>
+    </view>
+    
+        <view class='item-info'>
+        <text class='tit'>章文嵩</text>
+        <text class='info'>Siri联合创始人及董事会成员，前斯坦福研究院风险投资集团总裁，《产品改变世界》作者    </text>
+        </view>
+      <view class='item-btn'>
+      <button class='follow-btn'>关注</button>
+      </view>
+  
+  </view>
+</view>
+<!-- 领域 -->
+<view class='followList2' wx:if="{{tuiTab==1}}">
+    <view class='f-item'>
+     <view class='img-info'>
+        <image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILqIuSgPKaAlH1Srj0oLVvCBu5qPEHLz3TpdhDg9uicpFic1P0HeNKbtGPwyF2icq7uJUIQuDUpbniaQ/132'></image>
+        <view class='txt-info'>
+         <text class='tits'>#大数据</text>
+         <text class='likes'>490 粉丝</text>
+        </view>
+       
+      </view>
+      <button class='big-follow'>关注</button>
+    </view>
+     <view class='f-item'>
+     <view class='img-info'>
+        <image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILqIuSgPKaAlH1Srj0oLVvCBu5qPEHLz3TpdhDg9uicpFic1P0HeNKbtGPwyF2icq7uJUIQuDUpbniaQ/132'></image>
+        <view class='txt-info'>
+         <text class='tits'>#大数据</text>
+         <text class='likes'>490 粉丝</text>
+        </view>
+       
+      </view>
+      <button class='big-follow'>关注</button>
+    </view>
+    <view class='f-item'>
+     <view class='img-info'>
+        <image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILqIuSgPKaAlH1Srj0oLVvCBu5qPEHLz3TpdhDg9uicpFic1P0HeNKbtGPwyF2icq7uJUIQuDUpbniaQ/132'></image>
+        <view class='txt-info'>
+         <text class='tits'>#大数据</text>
+         <text class='likes'>490 粉丝</text>
+        </view>
+       
+      </view>
+      <button class='big-follow'>关注</button>
+    </view>
+    <view class='f-item'>
+     <view class='img-info'>
+        <image src='https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTILqIuSgPKaAlH1Srj0oLVvCBu5qPEHLz3TpdhDg9uicpFic1P0HeNKbtGPwyF2icq7uJUIQuDUpbniaQ/132'></image>
+        <view class='txt-info'>
+         <text class='tits'>#大数据</text>
+         <text class='likes'>490 粉丝</text>
+        </view>
+       
+      </view>
+      <button class='big-follow'>关注</button>
+    </view>
+</view> 

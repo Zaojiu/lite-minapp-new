@@ -1,0 +1,123 @@
+/* components/follow/follow.wxss */
+
+
+/* //推荐 */
+.tuijian{
+  margin: 24px 0px 16px 0px;
+  
+}
+.tuijian .tui-item{
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+  color: rgb(179, 179, 179);
+  font-weight: 700;
+  padding: 0 12px;
+  display: inline-block;
+  border-radius: 14px;
+}
+.tuijian .tui-item.active{color: rgb(85, 85, 85);background-color: rgb(239, 239, 239)}
+
+
+.follow-item{
+  display: flex;
+  margin-bottom: 28px;
+}
+.item-img{
+  width: 64px;
+  margin-right: 8px;
+}
+.item-info{
+  flex: 1;
+}
+.item-info .tit{
+  display: block;
+  margin-top: 3px;
+  font-size: 16px;
+  color: rgb(85, 85, 85);
+  line-height: 20px;
+  font-weight: 700;
+   overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+}
+.item-info .info{
+  display: inline-block;
+  font-size: 12px;
+  color: rgb(179, 179, 179);
+  line-height: 17px;
+   overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+}
+.item-btn{
+  margin-left: 16px;
+  padding-top: 20px;
+}
+
+.img{
+  z-index: 1;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+/* 领域 */
+.followList2{
+  overflow: hidden;
+}
+.f-item{
+  width: 320rpx;
+ margin-bottom: 56rpx;
+}
+.f-item:nth-child(2n){
+  float: left;
+}
+.f-item:nth-child(2n+1){
+  float: right;
+}
+.f-item .img-info{
+  position: relative;
+  font-size: 0;
+  
+}
+.f-item .img-info image{
+width: 320rpx;
+height: 320rpx;
+border-radius: 4px;
+}
+.f-item .img-info .txt-info{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 104rpx;
+  
+  padding: 0 12px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+            background-repeat: repeat-x;
+  
+}
+.f-item .img-info .txt-info text{
+  color: #fff;
+  display: block;
+}
+.f-item .img-info .txt-info .tits{
+  font-size: 16px;
+  line-height: 20px;
+  margin: 20rpx 0 4rpx 0;
+}
+.f-item .img-info .txt-info .likes{
+  font-size: 10px;
+  line-height: 12px;
+}
+.f-item .big-follow{
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  margin-top: 12px;
+}

@@ -1,0 +1,2 @@
+<!-- 会员中心 -->
+<web-view src="{{webSrc}}" bindmessage="msgHandler"></web-view>

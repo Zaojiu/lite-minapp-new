@@ -1,0 +1,40 @@
+<!--pages/hearDetail/hearDetail.wxml-->
+<!-- <view>
+  <view class='content'>
+    <image class="img" src='{{dataList.coverUrl}}'></image>
+   
+    <view class='title'>
+    {{dataList.subject}}
+    </view>
+  </view>
+  <view style='padding: 0 20px;'>
+
+  <view class='audio'>
+    <view class='playYN' bindtap='play'>
+     
+      <image src='{{srcAudio}}' mode='widthFix'></image>
+    </view>
+    <view class='slider'>
+      <slider backgroundColor='rgb(235,235,235)' value='{{slider}}' block-size="24" block-color="rgb(247,247,247)" activeColor='rgb(173,37,38)' bindchange='changeAudio' step='1'></slider>
+    </view>
+    <view class='time'>
+      {{dTime}}
+    </view>
+  </view>
+  <view style='padding-bottom:60px;'>
+  <import src="../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  
+  </view>
+</view>
+<view class='bottom-money'>
+
+  <view class='left'>{{(dataList.totalFee)/100}}元</view>
+  <view class='right'>
+    <view class='f_money'>{{(dataList.groupBuyFee)/100}}元</view>
+    <view class='fllow_txt'>分享海报享团购价</view>
+  </view>
+</view> -->
+<!-- 听书详情 -->
+<web-view src="{{webSrc}}" bindmessage="shareData"></web-view>

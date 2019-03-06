@@ -1,0 +1,95 @@
+<!--pages/myOrder/myOrder.wxml-->
+<!-- <view class='order'>
+ <scroll-view scrool-x="true" class='tuijian'>
+<view class="tui-item {{tuiTab==0?'active':''}}" bindtap='switchTui'  data-current="0">
+  全部
+</view>
+<view class="tui-item {{tuiTab==1?'active':''}}" bindtap='switchTui'  data-current="1">
+  待支付
+</view>
+<view class="tui-item {{tuiTab==2?'active':''}}" bindtap='switchTui'  data-current="2">
+  已支付
+</view>
+</scroll-view>
+
+<view class='itemList'>
+  <view class='item'>
+   <view class='item-head'>
+    <view class='img'>
+      <image src='https://baiding-pub.zaojiu.com/cover/img/FpDfZxZLulIGNoxr4WyDS4McRRmZ-1538978369.jpg' mode="aspectFill"></image>
+    </view>
+    <view class='info'>
+      <view class='title'>第54届台北金马影展暨亚太电影奖励大会</view>
+      <view class='type'>通用参观票</view>
+    </view>
+    <view class='moneyInfo'>
+      <view class='newMoney'>￥ 99</view>
+      <view class='oldMoney'>￥ 199</view>
+      <view class='num'> x2</view>
+    </view>
+    </view>
+  <view class='item-center'>
+  <view class='info'>共2件商品  合计：<view class='totalMoney'>￥198.00</view> </view>
+</view>
+<view class='item-footer'>
+  <view class='order qxOrder'>取消订单</view>
+  <view class='order zOrder'>去支付</view>
+</view>
+  </view>
+
+
+  <view class='item'>
+   <view class='item-head'>
+    <view class='img'>
+      <image src='https://baiding-pub.zaojiu.com/cover/img/FpDfZxZLulIGNoxr4WyDS4McRRmZ-1538978369.jpg' mode="aspectFill"></image>
+    </view>
+    <view class='info'>
+      <view class='title'>第54届台北金马影展暨亚太电影奖励大会</view>
+      <view class='type'>通用参观票</view>
+    </view>
+    <view class='moneyInfo'>
+      <view class='newMoney'>￥ 99</view>
+      <view class='oldMoney'>￥ 199</view>
+      <view class='num'> x2</view>
+    </view>
+    </view>
+  <view class='item-center'>
+  <view class='info'>共2件商品  合计：<view class='totalMoney'>￥198.00</view> </view>
+</view>
+<view class='item-footer'>
+  <view class='order qxOrder'>取消订单</view>
+  <view class='order zOrder'>邀好友拼单</view>
+</view>
+  </view>
+
+
+
+<view class='item'>
+   <view class='item-head'>
+    <view class='img'>
+      <image src='https://baiding-pub.zaojiu.com/cover/img/FpDfZxZLulIGNoxr4WyDS4McRRmZ-1538978369.jpg' mode="aspectFill"></image>
+    </view>
+    <view class='info'>
+      <view class='title'>第54届台北金马影展暨亚太电影奖励大会</view>
+      <view class='type'>通用参观票</view>
+    </view>
+    <view class='moneyInfo'>
+      <view class='newMoney'>￥ 99</view>
+      <view class='oldMoney'>￥ 199</view>
+      <view class='num'> x2</view>
+    </view>
+    </view>
+  <view class='item-center'>
+  <view class='info'>共2件商品  合计：<view class='totalMoney'>￥198.00</view> </view>
+</view>
+<view class='item-footer'>
+ 
+  <view class='order zOrder'> 申请退款</view>
+</view>
+  </view>
+
+
+</view>
+</view> -->
+<!-- 我的订单 -->
+<web-view src="{{webSrc}}" bindmessage="msgHandler"></web-view>

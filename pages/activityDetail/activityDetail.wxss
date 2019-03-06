@@ -1,0 +1,67 @@
+/* pages/activityDetail/activityDetail.wxss */
+@import '../../wxParse/wxParse.wxss';
+.img{
+  position: relative;
+}
+.img .boxshow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+ height: 88px;
+ width: 100%;
+ background: linear-gradient(rgba(0,0,0,.4),transparent);
+}
+.img image{
+width: 100%;
+
+}
+.subject{
+    margin: 20px;
+    font-size: 20px;
+    color: #000;
+    line-height: 1.25em;
+    word-break: break-all;
+    font-weight: 700;
+}
+.content{
+  padding: 0 20px 60px 20px;
+}
+.content .wxParse-p{
+      margin: 1em 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+    line-height: 1.75em;
+    text-align: justify;
+    font-size: 16px;
+    color: #4b4b4b;
+}
+.wxParse-li-text{
+  line-height: normal;
+}
+.wxParse-inline{
+  font-size: 14px;
+    line-height: 28px;
+    color: #a6a6a6;
+}
+.wxParse-inline image{
+  max-width: 100%;
+  margin: 0 auto;
+}
+.wxParse-img{
+    max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.buy_tickets{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  background-color: #CC2B2B;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}

@@ -1,0 +1,6 @@
+<view class='bg' >
+  <view class='showMobal' >
+    <text>您好，我们将获取您的个人信息(包括微信昵称、头像)</text>
+    <button class="getShowInfo" type="primary" open-type="getUserInfo" bindgetuserinfo="userInfoHandler"> 微信登录    </button>
+  </view>
+</view>

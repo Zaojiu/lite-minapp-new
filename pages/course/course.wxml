@@ -1,0 +1,56 @@
+<!--课程/听书-->
+<view style='padding:0 20px;'>
+
+<view class='cou_tab'>
+ <view class="tab {{currentTab==0?'active':''}}"  data-current="0" bindtap="switchTab">课程</view>
+ <view class="tab {{currentTab==1?'active':''}}"  data-current="1" bindtap="switchTab">听书</view>
+
+ <view class='purchased' bindtap='goPurchased'>已购</view>
+</view>
+
+<view class='wholeList' wx:if="{{currentTab==0}}">
+  <view class='wItem' wx:for="{{dataList}}" wx:key='{{item.id}}' wx:for-index="bindex" bindtap="getDetail" data-id="{{item.id}}" data-type="1">
+    <view class='img'>
+      <image src='{{item.image}} ' mode="aspectFill"></image>
+      <view class='course'><image wx:if="{{item.resType==2}}" src='../../assets/image/kechengIcon.png'></image><image wx:if="{{item.resType==1}}" src='../../assets/image/tingshuIcon.png'></image>
+      </view>
+    </view>
+    <view class='text'>
+      <text class='tit'>{{item.subject}}</text>
+      <text class='name'>{{item.speakerName}} · {{item.speakerMeta}}</text>
+      <view class='money'>
+        <text>{{item.currentVol}}课 </text>/<text> {{(item.totlePrice)/100}}元 </text>/ <text wx:if="{{item.memberPrice==0}}" class='state'> 会员免费 </text>
+
+<text wx:else class='state over'>{{(item.memberPrice)/100}}元</text>
+        </view>
+      </view>
+    </view>
+    <view class='loading'>
+          {{isLoading}} 
+      </view>
+</view>
+
+<view class='wholeList' wx:if="{{currentTab==1}}">
+  <view class='wItem' wx:for="{{bookList}}" wx:key='{{item.id}}' wx:for-index="bindex" bindtap="getDetail" data-id="{{item.id}}" data-type="2">
+    <view class='img'>
+      <image src='{{item.image}} ' mode="aspectFill"></image>
+      <view class='course'><image wx:if="{{item.resType==2}}" src='../../assets/image/kechengIcon.png'></image><image wx:if="{{item.resType==1}}" src='../../assets/image/tingshuIcon.png'></image>
+      </view>
+    </view>
+    <view class='text'>
+      <text class='tit'>{{item.subject}}</text>
+      <!-- <text class='name'>{{item.speakerName}} · {{item.speakerMeta}}</text> -->
+      <view class='money'>
+        <text>{{item.currentVol}}课 </text>/<text> {{(item.totlePrice)/100}}元 </text>/ <text wx:if="{item.memberPrice==0}}" class='state'> 会员免费 </text>
+
+<text wx:else class='state over'>{{(item.memberPrice)/100}}元</text>
+        </view>
+      </view>
+    </view>
+     <view class='loading'>
+          {{isLoading}} 
+      </view>
+  </view>
+ 
+</view>
+

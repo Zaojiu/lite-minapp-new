@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+  
+    "follow": "/components/myFollow/myFollow"
+    
+  }
+}

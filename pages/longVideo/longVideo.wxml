@@ -1,0 +1,39 @@
+<!--pages/longVideo/longVideo.wxml-->
+
+<view class='section'>
+    <view class='video'>
+      <video id='video'  src='http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400' controls='true' show-center-play-btn='false' objectFit="cover" poster='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543225225095&di=191ed79302389703c9b2ca80e5f0214a&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fae51f3deb48f8c540649046e37292df5e1fe7fdd.jpg' muted="{{muted}}">
+      <cover-view class='top-head'>
+       <cover-image class='like' src="../../assets/image/likeWhite.png"></cover-image>
+        <!-- <cover-image class='headset' src="../../assets/image/headset.png" bindtap='playTab'></cover-image> -->
+      </cover-view>
+      <!-- <cover-view class='bottom'>
+        <cover-image class='playNY' src='../../assets/image/smallPlay.png'></cover-image>
+        
+      </cover-view> -->
+      
+      
+      </video>
+    </view>
+    <view class='content'>
+      <view class='tit'>
+        置死地而后生《只狼》破戒僧Boss战演示，重点在这里
+      </view> 
+      <view class='info'>
+        <view class='img'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543225225095&di=191ed79302389703c9b2ca80e5f0214a&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fae51f3deb48f8c540649046e37292df5e1fe7fdd.jpg'></image>
+        </view>
+       <view class='info-txt'>
+        <view class='name'>李大大</view>
+        <view class='summary'>联合国主席 联合国主席 联合国主席 联合国主席 联合国主席</view>
+       </view>
+       <view class='followBtn'>
+        <button class='follow'>关注</button>
+       </view>
+      </view>
+
+      <view class='v-html'>
+        由 From Softwar 倾力打造的动作游戏《只狼 影逝二度》在科隆游戏展上提供了实机试玩，让不少玩家能够提前领略本作的魅力。IGN 在试玩了《只狼 影逝二度》后，总结了十五个玩家需要知晓的信息，下面就是这些信息的内容。
+      </view>
+    </view>
+</view>

@@ -1,0 +1,14 @@
+<!-- 时刻详情 -->
+<!-- <image class='image' src="{{dataT.coverUrl}}" mode='widthFix'></image>
+<view class='talk-info'>
+  <text class='h1'>{{dataT.subject}}</text>
+  <text class='time'>{{dataT.publishAt}}</text>
+</view>
+<view style='padding:0 20px;'>
+<import src="../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>  -->
+
+<web-view src="{{webSrc}}" bindmessage="msgHandler"></web-view>
+
+

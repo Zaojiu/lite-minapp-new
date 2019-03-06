@@ -1,0 +1,6 @@
+<!--pages/myFollow/myFollow.wxml-->
+<!-- <view style='padding:0 16px;'>
+<follow></follow>
+</view> -->
+<!-- 我的关注 -->
+<web-view src="{{webSrc}}" bindmessage="msgHandler"></web-view>

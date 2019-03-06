@@ -1,0 +1,55 @@
+<!--components/find/find.wxml-->
+<!-- 短视频列表模板 -->
+<view class='overList'>
+
+
+<view class='findList left'>
+  <view class='item ' wx:for="{{list}}" wx:key="unique" >
+  <view wx:if="{{index%2==0}}" >
+  
+ 
+    <view class='img' bindtap='goDetail' data-id="{{item.resourceId}}">
+      <image src='{{item.image}}' mode='widthFix'></image>
+    </view>
+    <view class='text'>
+        <text>{{item.title}}</text>
+    </view>
+    <view class='item-bottom'>
+    <view class='name'>
+      <image src='{{item.speakerImage}}' ></image>
+      <text>{{item.speakerName}}</text>
+    </view>
+     <!-- <view class='like'>
+      <image src='../../assets/image/groupN.png'></image>
+      <text>{{item.favourite}}</text>
+    </view> -->
+    </view>
+     </view>
+  </view>
+ 
+</view>
+
+<view class='findList right'>
+ <view class='item ' wx:for="{{list}}" wx:key="unique" >
+  <view wx:if="{{index%2==1}}" >
+    <view class='img' bindtap='goDetail' data-id="{{item.resourceId}}">
+      <image src='{{item.image}}' mode='widthFix'></image>
+
+    </view>
+    <view class='text'>
+        <text>{{item.title}}</text>
+    </view>
+    <view class='item-bottom'>
+    <view class='name'>
+      <image src='{{item.speakerImage}}' ></image>
+      <text>{{item.speakerName}}</text>
+    </view>
+     <!-- <view class='like'>
+      <image src='../../assets/image/groupN.png'></image>
+      <text>{{item.favourite}}</text>
+    </view> -->
+    </view>
+    </view>
+  </view>
+</view>
+</view>

@@ -1,0 +1,70 @@
+/* pages/minte/minte.wxss */
+.my-home{
+  padding: 0 20px 0 16px;
+}
+.my-header{
+  display: flex;
+  margin: 16px 0 0 0;
+}
+.my-header .img{
+  width: 64px;
+  margin-right: 8px;
+  position: relative;
+  font-size: 0;
+}
+.img .userImg{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+
+}
+.img .vipIcon{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  bottom: 0;
+}
+.my-header .my-info{
+  flex: 1;
+  
+}
+.my-header .my-info .name{
+  font-size: 20px;
+  /* line-height: 24px; */
+  line-height: 64px;
+  color: rgb(85, 85, 85);
+  font-weight: 700;
+  /* margin: 9px 0 4px 0; */
+}
+.my-header .my-info .lookInfo{
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(179, 179, 179);
+  font-weight: 500;
+}
+.enter{
+  width: 24px;
+}
+.enter image{
+  width: 24px;
+  height: 24px;
+  margin-top: 20px;
+}
+.vipInfo{
+  margin: 24px 0 36px 0;
+}
+.vipInfo image{
+  width: 100%;
+  height: 48px;
+}
+.userItems{
+  margin-bottom: 32px;
+}
+.userItems .item{
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(85, 85, 85);
+  margin-bottom: 16px;
+  font-weight: 700;
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "search": "/components/search/search",
+    "follow": "/components/follow/follow",
+    "find": "/components/find/find",
+    "speaker": "/components/speaker/speaker"
+  },
+  "enablePullDownRefresh": true
+}

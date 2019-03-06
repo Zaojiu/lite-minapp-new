@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "find": "/components/find/find",
+    "course": "/components/course/course"
+  }
+}

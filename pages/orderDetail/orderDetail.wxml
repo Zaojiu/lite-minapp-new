@@ -1,0 +1,34 @@
+<!--pages/orderDetail/orderDetail.wxml-->
+<view class="container">
+  
+
+      <view class='item'>
+        <view class='item-head'>
+          <view class='img'>
+            <image src='https://baiding-pub.zaojiu.com/cover/img/FpDfZxZLulIGNoxr4WyDS4McRRmZ-1538978369.jpg' mode='aspectFill'>
+          </image>
+          </view>
+          <view class='info'>
+            <view class='title'>第54届台北金马影展暨亚太电影奖励大会</view>
+            <view class='type'>通用参观票</view>
+          </view>
+          <view class='moneyInfo'>
+            <view class='newMoney'>￥ 99</view>
+            <view class='oldMoney'>￥ 199</view>
+            <view class='num'> x2</view>
+          </view>
+        
+    </view>
+    <view class="choose" bindtap="goProPrice">
+      <view class='span'>选取优惠券</view>
+      <view class='i' >-0元</view>
+      <image class='rightImg' src='../../assets/image/enter-right.png'></image>
+    </view>
+
+    <view class="footer">
+      <view class="left">合计: <view class='totalMoney'>199元</view></view>
+      <view class="right">立即付款</view>
+      
+    </view>
+  </view>
+</view>
